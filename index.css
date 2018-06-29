@@ -13,6 +13,10 @@ body {
   font-weight: 900;
   font-size: 34.5px;
   line-height: 1.58;
+
+  /* ie11 flexbox min-height workaround */
+  display: flex;
+  flex-direction: column;
 }
 
 img.logo {
