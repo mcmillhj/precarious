@@ -3,12 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
 
-    <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta property="og:title" content="Precarious Beer Project | Williamsburg VA" />
+    <meta property="og:description" content="Brewing on the edge of progression" />
+    <meta property="og:image" content="http://amazing-cray-d61de1.netlify.com/img/share-image.png" />
+    <meta property="og:image:secure_url" content="https://amazing-cray-d61de1.netlify.com/img/share-image.png" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@precariousbeer" />
+    <meta property="twitter:title" content="Precarious Beer Project | Williamsburg VA" />
+    <meta property="twitter:description" content="Brewing on the edge of progression" />
+    <meta property="twitter:image" content="https://amazing-cray-d61de1.netlify.com/img/share-image.png" />
 
-    <title>Precarious</title>
+    <title>Precarious Beer Project | Williamsburg VA</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
     <style type="text/css">
         html,
@@ -25,8 +33,8 @@
             padding: 29px 0;
             font-family: "Montserrat", sans-serif;
             font-weight: 900;
-            font-size: 34.5px;
-            line-height: 1.58;
+            font-size: 15px;
+            line-height: 1.25;
 
             /* ie11 flexbox min-height workaround */
             display: -webkit-box;
@@ -38,7 +46,14 @@
             flex-direction: column;
         }
 
-        img.logo {
+        img.amberox-logo {
+            height: auto;
+            width: auto;
+            max-width: 88px;
+            max-height: 88px;
+        }
+
+        img.precarious-logo {
             height: auto;
             width: auto;
             max-width: 415px;
@@ -77,25 +92,45 @@
         .social-link+.social-link {
             margin-left: 13px;
         }
+
+        img.social-icon {
+            height: auto;
+            width: auto;
+            max-height: 24px;
+            max-width: 24px;
+        }
+
+        .text {
+            text-align: center;
+            text-transform: uppercase;
+            color: #404041;
+        }
+
+        span.em {
+          font-size: 10px;
+          font-style: italic;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <a href="https://www.theamberox.com/">
-            <img src="img/amberox-logo.png" alt="Amber Ox Logo" />
+            <img class="amberox-logo" src="img/amberox-logo.png" alt="Amber Ox Logo" />
         </a>
-        <img class="logo" src="img/precarious-logo.png" alt="Amber Ox Logo" />
-        <p>Opening Spring 2019</p>
+        <img class="precarious-logo" src="img/precarious-logo.png" alt="Precarious Beer Logo" />
+        <p class="text">
+            <span class="em">WEBSITE COMING SOON</span>
+            <br/>BREWING ON THE EDGE OF PROGRESSION</p>
         <ul class="social-links-container">
             <li class="social-link">
                 <a href="https://www.facebook.com/precariousbeer/">
-                    <img src="img/facebook.png" alt="Amber Ox Logo" />
+                    <img class="social-icon" src="img/facebook.png" alt="Facebook icon" />
                 </a>
             </li>
             <li class="social-link">
                 <a href="https://www.instagram.com/precariousbeerproject/">
-                    <img src="img/instagram.png" alt="Amber Ox Logo" />
+                    <img class="social-icon" src="img/instagram.png" alt="Instagram icon" />
                 </a>
             </li>
         </ul>

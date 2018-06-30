@@ -11,15 +11,24 @@ body {
   padding: 29px 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 34.5px;
-  line-height: 1.58;
+  font-size: 15px;
+  line-height: 1.25;
 
   /* ie11 flexbox min-height workaround */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
 
-img.logo {
+img.amberox-logo {
+  height: auto;
+  width: auto;
+  max-width: 88px;
+  max-height: 88px;
+}
+
+img.precarious-logo {
   height: auto;
   width: auto;
   max-width: 415px;
@@ -27,6 +36,8 @@ img.logo {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +46,8 @@ img.logo {
 }
 
 .social-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   list-style-type: none;
@@ -44,4 +57,22 @@ img.logo {
 
 .social-link + .social-link {
   margin-left: 13px;
+}
+
+img.social-icon {
+  height: auto;
+  width: auto;
+  max-height: 24px;
+  max-width: 24px;
+}
+
+.text {
+  text-align: center;
+  text-transform: uppercase;
+  color: #404041;
+}
+
+span.em {
+  font-size: 10px;
+  font-style: italic;
 }
